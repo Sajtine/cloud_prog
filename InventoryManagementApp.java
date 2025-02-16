@@ -61,13 +61,13 @@ public class InventoryManagementApp{
 
             System.out.print("Enter your choice: ");
             int userChoice = sc.nextInt();
-
+            sc.nextLine();
 
             switch(userChoice){
                 case 1:
                     System.out.println("-------------------------");
                     System.out.print("Enter Product name: ");
-                    String product = sc.next();
+                    String product = sc.nextLine();
                     System.out.print("Enter Price: ");
                     int price = sc.nextInt();
                     ims.addProduct(product, price);
